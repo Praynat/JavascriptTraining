@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+        #mainContainer{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #counterBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            border: black solid;
+            border-radius: 1rem; 
+            padding: 2rem 4rem;
+        }
+
+        #mainTitle{
+            font-family: cursive;
+        }
+
+       #numbersContainer h1{
+        font-size: 8rem;
+        font-family: cursive;
+        color: rgba(0, 0, 0, 0.858);
+       } 
+
+       #buttonsContainer button{
+            width: 4rem;
+            height: 4rem;
+            margin: 0px 0.5rem;
+            font-size: 2rem;
+            border-radius: 1rem;
+       }
+
+       #resetButton button{
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            background-color: lightcoral;
+            font-family: cursive;
+       }
+    </style>
+</head>
+<body>
+    
+    <div id="mainContainer">
+        <div id="counterBox">
+            <h1 id="mainTitle">The Counter</h1>
+            <div id="numbersContainer">
+                <h1 id="theNumber">0</h1>
+            </div>
+            <div id="buttonsContainer">
+                <button id="+Btn">+</button>
+                <button id="-Btn">-</button>
+            </div>
+            <div id="resetButton">
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Ex3Js.js"></script>
+</body>
+</html>

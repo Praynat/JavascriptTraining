@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>croix et rond</title>
+    <style>
+        #button-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          max-width: 300px;
+          opacity: 1;
+          z-index: 1;
+        }
+        .grid-button {
+          padding: 20px;
+          font-size: 64px;
+          border: 1px solid #000;
+          background-color: #ed8484;
+          cursor: pointer;
+          width: 100px;
+          height: 100px;
+        }
+        #mainContainer{
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          >h1{
+            position: ;
+           font-family: cursive;
+           font-size: 4rem;
+          }
+        }
+        #theWinner{
+          position:relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: -13.5rem;
+          margin-right: -1rem;
+        }
+
+        #player1{
+          display: flex;
+          opacity: 0;
+          background-color: antiquewhite;
+          border-radius: 2rem;
+          border: black solid;
+          padding: 1rem 1rem;
+        }
+
+        #resetBtn{
+          opacity: 0;
+          z-index: 0;
+          justify-content: center;
+          width: 2rem;
+          margin-top: 0.5rem;
+          background-color: antiquewhite;
+          border-radius: 2rem;
+          border: black solid;
+          padding: 0.6rem 0.6rem;
+          img{
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        #resetBtn:hover{
+          scale: 1.1;
+        }
+
+        #resetBtn:active{
+          scale: 1;
+        }
+      </style>
+</head>
+<body>
+    <div id="mainContainer">
+    <h1>Tic-Tac-Toe</h1>
+      <div id="button-grid">
+        <button id="mybtn0" class="grid-button"></button>
+        <button id="mybtn1" class="grid-button"></button>
+        <button id="mybtn2" class="grid-button"></button>
+        <button id="mybtn3" class="grid-button"></button>
+        <button id="mybtn4" class="grid-button"></button>
+        <button id="mybtn5" class="grid-button"></button>
+        <button id="mybtn6" class="grid-button"></button>
+        <button id="mybtn7" class="grid-button"></button>
+        <button id="mybtn8" class="grid-button"></button>
+      </div>
+      
+      <div id="theWinner">
+        <h1 id="player1">Player 1 wins!</h1>
+        <div id="resetBtn">
+          <img src="./reset.png" alt="">
+        </div>
+      </div>
+
+      
+    </div>
+
+
+    <script src="./Ex2Js.js"></script>
+</body>
+</html>
